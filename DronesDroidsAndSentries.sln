@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DronesDroidsAndSentries", "DronesDroidsAndSentries.csproj", "{EADC0E8C-8BE7-4699-8D82-BB06A754EDF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EADC0E8C-8BE7-4699-8D82-BB06A754EDF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADC0E8C-8BE7-4699-8D82-BB06A754EDF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADC0E8C-8BE7-4699-8D82-BB06A754EDF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADC0E8C-8BE7-4699-8D82-BB06A754EDF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6EC9C44-5E40-454C-BC5B-88181C5FEDD1}
+	EndGlobalSection
+EndGlobal

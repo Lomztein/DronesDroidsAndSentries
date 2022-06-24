@@ -1,0 +1,26 @@
+Drones, Droids, and Sentries is a mod themed around minions and sentries that make use of ammunition from the players inventory. At the moment it is merely a prototype, and I don't know how far it'll go, but the intend is to at least add a number of minions based on this theme, throughout the game.
+
+The initial goal is to implement the following sentries:
+ * One "Living Bow" for each of the basic bows (Wooden, Iron/Lead, Silver/Tungsten, Gold/Platinum, Demonite/Crimtane)
+ * One "Living Repeater" for each of the repeaters (Cobalt/Palladium, Orichalcum/Mythril, Adamantite/Titanium, Hallowed, Chlorophyte)
+Each "Living" equivalent has the same damage but 40% fire rate of the original. They are crafted using the original + some of the base material + some addition of increasing rarity for tier. For instance, Wooden Living Bow is crafted using a Wooden Bow + 10 Fallen Stars, with the rest of the bows crafted with gems of increasing rarity.
+ * Engineers Sentry - Based on the sentry from Team Fortress 2, has three tiers upgraded through the game. First tier purchasable from the mechanic. Upgraded to second using Hallowed Bars, and third using Chloryphyte bars.
+
+The following minions:
+ * Archer - Medieval-type archer that walks on the ground and fires arrows. Crafted using wooden bow, crimtane/demonite bars, and mana stars.
+ * Gunslinger - Cowboy. The same way as archer, but revolver from Travelling Merchant instead of Wooden Bow.
+ * Hoverdrone - Drone with a slow-firing gun, crafted using the rocket boots, Undertaker/Musket, and some .
+ * Heavy Hoverdrone - Upgrade of drone, crafted from Hoverdrone, Hallowed Bar, and Megashark
+ * Skull - Hovering skull that shoots flames, crafted using bones, 10 of each boss soul, and a Flamethrower
+ * Fighter Jet - Jet that flies around and shoots homing rockets.
+ * Sentient Shotgun - Fires a blast of bullets, crafted using tactical shotgun and Spectra Bars
+ * Snoipah - Crafted using sniper rifle, sniper scope, and chloryphyte bars.
+
+The following equipment:
+ * Shoulder-mounted Gun - Crafted using Handgun, has hellstone upgrade.
+ * Ingrown Rifle - Dropped from Wall of Flesh
+ * AtG Missile Mk. 2 - Can be used in any weather
+
+More to be added, these were what I could come up with at the top of my head.
+
+For the time being, the goal is a prototype that implements just the sentries, as well as the hoverdrone minions and the accessories.

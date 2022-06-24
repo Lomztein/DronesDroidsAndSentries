@@ -1,0 +1,3 @@
+displayName = Drones, Droids, and Sentries
+author = Lomzie
+version = 0.1
