@@ -63,67 +63,17 @@ namespace DronesDroidsAndSentries.Projectiles.Common
 
         protected Item GetProjectile()
         {
-            Player player = Main.player[Projectile.owner];
-            IEnumerable<Item> ammoSlots = new List<Item>()
-            {
-                player.inventory[54],
-                player.inventory[55],
-                player.inventory[56],
-                player.inventory[57]
-            };
-            Item fromAmmoSlot = ammoSlots.FirstOrDefault(x => x.stack > 0 && x.active && IsAmmoType(x.ammo));
-            if (fromAmmoSlot == null)
-            {
-                return player.inventory.LastOrDefault(x => x.stack > 0 && x.active && IsAmmoType(x.ammo));
-            }
-            else return fromAmmoSlot;
-        }
-
-        protected virtual bool IsAmmoType(int ammo)
-        {
-            return AmmoType == ammo;
+            return Utils.GetProjectile(Main.player[Projectile.owner], AmmoType);
         }
 
         protected virtual void ConsumeAmmo(Item ammoItem)
         {
-            if (ammoItem.maxStack > 1 && ammoItem.stack < 3996) // Not infinite.
-            {
-                ammoItem.stack--;
-            }
+            Utils.ConsumeAmmo(ammoItem);
         }
 
         protected virtual Vector2? FindTarget(ref float targetDist)
         {
-            Player player = Main.player[Projectile.owner];
-            Vector2? targetPos = null;
-
-            // If the player has whipped something, target that.
-            if (player.HasMinionAttackTargetNPC)
-            {
-                NPC npc = Main.npc[player.MinionAttackTargetNPC];
-                if (Collision.CanHitLine(Projectile.position, Projectile.width, Projectile.height, npc.position, npc.width, npc.height))
-                {
-                    targetPos = npc.Center;
-                }
-            }
-            else
-            {
-                for (int k = 0; k < 200; k++)
-                {
-                    NPC npc = Main.npc[k];
-                    if (npc.CanBeChasedBy(this, false))
-                    {
-                        float distance = Vector2.Distance(npc.Center, Projectile.position);
-                        if (distance < targetDist && Collision.CanHitLine(Projectile.position, Projectile.width, Projectile.height, npc.position, npc.width, npc.height))
-                        {
-                            targetDist = distance;
-                            targetPos = npc.Center;
-                        }
-                    }
-                }
-            }
-
-            return targetPos;
+            return Utils.FindTargetForMinion(Main.player[Projectile.owner], Projectile, ref targetDist);
         }
     }
 }

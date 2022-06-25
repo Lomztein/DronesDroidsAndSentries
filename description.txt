@@ -18,8 +18,14 @@ The following minions:
 The following equipment:
  * Shoulder-mounted Gun - Crafted using Handgun, has hellstone upgrade.
  * Ingrown Rifle - Dropped from Wall of Flesh
- * AtG Missile Mk. 2 - Can be used even with a chance of downpour
+ * Overgrown Rifle - Crafted with Ingrown Rifle, Chlorophyte bars, and vines.
+ * AtG Missile Mk. 2 - Can be used even with a chance of downpour, dropped from Angry Nimbus after Plantera
+ * Old Antenna - Increases max sentries by 1, found in dungeon golden chests
 
 More to be added, these were what I could come up with at the top of my head.
 
 For the time being, the goal is a prototype that implements just the sentries, as well as the hoverdrone minions and the accessories.
+
+Further goals:
+ * Upgraded variants of living bows, post moonlord, each with unique abilities.
+ * A Terra-variant that combines living bows and sentient repeaters

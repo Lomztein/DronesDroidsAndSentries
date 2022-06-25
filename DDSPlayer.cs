@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DronesDroidsAndSentries.Items.Accessories;
+using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,7 +47,7 @@ namespace DronesDroidsAndSentries
 
         // -- ACCESSORIES --
         public bool shoulderMountedGun = false;
-        public bool ingrownRifle = false;
+        public IngrownRifle ingrownRifle = null;
         public bool atgMk2 = false;
 
         public override void ResetEffects()
@@ -79,8 +81,34 @@ namespace DronesDroidsAndSentries
             heavyHoverdrone = false;
 
             shoulderMountedGun = false;
-            ingrownRifle = false;
+            ingrownRifle = null;
             atgMk2 = false;
+        }
+
+        public override void OnHitNPC(Item item, NPC target, int damage, float knockback, bool crit)
+        {
+            CheckAndFireAtgMk2(target, damage, knockback, crit);
+        }
+
+        public override void OnHitNPCWithProj(Projectile proj, NPC target, int damage, float knockback, bool crit)
+        {
+            CheckAndFireAtgMk2(target, damage, knockback, crit);
+        }
+
+        private void CheckAndFireAtgMk2 (NPC target, int damage, float knockback, bool crit)
+        {
+            if (atgMk2)
+            {
+                AtgMk2.TryFire(Player, target, damage, knockback, crit);
+            }
+        }
+
+        public override void PostUpdate()
+        {
+            if (ingrownRifle != null)
+            {
+                IngrownRifle.UpdateRifle(this, ingrownRifle);
+            }
         }
     }
 }

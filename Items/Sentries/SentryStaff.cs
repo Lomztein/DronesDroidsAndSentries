@@ -9,7 +9,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DronesDroidsAndSentries.Items.Sentries.LivingBows
+namespace DronesDroidsAndSentries.Items.Sentries
 {
     public abstract class SentryStaff : ModItem
     {
