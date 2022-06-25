@@ -64,7 +64,19 @@ namespace DronesDroidsAndSentries.Projectiles.Common
         protected Item GetProjectile()
         {
             Player player = Main.player[Projectile.owner];
-            return player.inventory.LastOrDefault(x => x.stack > 0 && x.active && IsAmmoType(x.ammo));
+            IEnumerable<Item> ammoSlots = new List<Item>()
+            {
+                player.inventory[54],
+                player.inventory[55],
+                player.inventory[56],
+                player.inventory[57]
+            };
+            Item fromAmmoSlot = ammoSlots.FirstOrDefault(x => x.stack > 0 && x.active && IsAmmoType(x.ammo));
+            if (fromAmmoSlot == null)
+            {
+                return player.inventory.LastOrDefault(x => x.stack > 0 && x.active && IsAmmoType(x.ammo));
+            }
+            else return fromAmmoSlot;
         }
 
         protected virtual bool IsAmmoType(int ammo)

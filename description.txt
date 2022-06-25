@@ -12,14 +12,13 @@ The following minions:
  * Hoverdrone - Drone with a slow-firing gun, crafted using the rocket boots, Undertaker/Musket, and some .
  * Heavy Hoverdrone - Upgrade of drone, crafted from Hoverdrone, Hallowed Bar, and Megashark
  * Skull - Hovering skull that shoots flames, crafted using bones, 10 of each boss soul, and a Flamethrower
- * Fighter Jet - Jet that flies around and shoots homing rockets.
  * Sentient Shotgun - Fires a blast of bullets, crafted using tactical shotgun and Spectra Bars
  * Snoipah - Crafted using sniper rifle, sniper scope, and chloryphyte bars.
 
 The following equipment:
  * Shoulder-mounted Gun - Crafted using Handgun, has hellstone upgrade.
  * Ingrown Rifle - Dropped from Wall of Flesh
- * AtG Missile Mk. 2 - Can be used in any weather
+ * AtG Missile Mk. 2 - Can be used even with a chance of downpour
 
 More to be added, these were what I could come up with at the top of my head.
 
